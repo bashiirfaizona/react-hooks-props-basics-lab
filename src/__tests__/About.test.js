@@ -18,3 +18,4 @@ test("does not render a <p> element if the bio is an empty string", () => {
   const { container } = render(<About bio="" links={user.links} />);
   expect(container.querySelector("p")).toBeNull();
 });
+
